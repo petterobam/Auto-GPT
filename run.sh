@@ -1,12 +1,12 @@
 #!/bin/bash
 
 function find_python_command() {
-    if command -v python &> /dev/null
-    then
-        echo "python"
-    elif command -v python3 &> /dev/null
+    if command -v python3 &> /dev/null
     then
         echo "python3"
+    elif command -v python &> /dev/null
+    then
+        echo "python"
     else
         echo "Python not found. Please install Python."
         exit 1

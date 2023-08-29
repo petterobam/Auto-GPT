@@ -8,6 +8,8 @@ from jsonschema import Draft7Validator
 from autogpt.config import Config
 from autogpt.logs import logger
 
+from typing import Dict
+
 CFG = Config()
 LLM_DEFAULT_RESPONSE_FORMAT = "llm_response_format_1"
 
@@ -30,7 +32,7 @@ def extract_char_position(error_message: str) -> int:
         raise ValueError("Character position not found in the error message.")
 
 
-def validate_json(json_object: object, schema_name: str) -> dict | None:
+def validate_json(json_object: object, schema_name: str) -> Dict | None:
     """
     :type schema_name: object
     :param schema_name: str
