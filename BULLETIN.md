@@ -1,24 +1,21 @@
-# Website and Documentation Site 📰📖
-Check out *https://agpt.co*, the official news & updates site for Auto-GPT!
-The documentation also has a place here, at *https://docs.agpt.co*
+# QUICK LINKS 🔗
+# --------------
+🌎 *Official Website*: https://agpt.co.
+📖 *User Guide*: https://docs.agpt.co.
+👩 *Contributors Wiki*: https://github.com/Significant-Gravitas/Auto-GPT/wiki/Contributing.
 
-# 🚀 v0.3.0 Release 🚀
-Over a week and 275 pull requests have passed since v0.2.2, and we are happy to announce
-the release of v0.3.0! *From now on, we will be focusing on major improvements* rather
-than bugfixes, as we feel stability has reached a reasonable level. Most remaining
-issues relate to limitations in prompt generation and the memory system, which will be
-the focus of our efforts for the next release.
+# v0.4.7 RELEASE HIGHLIGHTS! 🚀
+# -----------------------------
+This release introduces initial REST API support, powered by e2b's agent 
+protocol SDK (https://github.com/e2b-dev/agent-protocol#sdk). 
 
-Highlights and notable changes in this release:
+It also includes improvements to prompt generation and support 
+for our new benchmarking tool, Auto-GPT-Benchmarks
+(https://github.com/Significant-Gravitas/Auto-GPT-Benchmarks).
 
-## Plugin support 🔌
-Auto-GPT now has support for plugins! With plugins, you can extend Auto-GPT's abilities,
-adding support for third-party services and more.
-See https://github.com/Significant-Gravitas/Auto-GPT-Plugins for instructions and available plugins.
+We've also moved our documentation to Material Theme, at https://docs.agpt.co.
 
-## Changes to Docker configuration 🐋
-The workdir has been changed from */home/appuser* to */app*.
-Be sure to update any volume mounts accordingly!
+As usual, we've squashed a few bugs and made some under-the-hood improvements.
 
-# ⚠️ Command `send_tweet` is DEPRECATED, and will be removed in v0.4.0 ⚠️
-Twitter functionality (and more) is now covered by plugins, see [Plugin support 🔌]
+Take a look at the Release Notes on Github for the full changelog:
+https://github.com/Significant-Gravitas/Auto-GPT/releases.
